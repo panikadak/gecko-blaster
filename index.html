@@ -7,20 +7,7 @@
 name="viewport"
 content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
 />
-  <script>
-        // Immediate referrer check before any other scripts load
-        (function() {
-            const allowedReferrer = 'app.baes.so';
-            const referrer = document.referrer;
-            
-            if (!referrer || !referrer.includes(allowedReferrer)) {
-                // Prevent any further script execution
-                document.write('Access denied. This application can only be accessed through app.baes.so');
-                window.stop();
-                throw new Error('Unauthorized access');
-            }
-        })();
-    </script>
+
 <style type="text/css">
 body,
 html {
